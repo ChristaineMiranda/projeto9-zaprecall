@@ -1,6 +1,4 @@
 import logo from "./assets/img/logo.png"
-
-//IMPORTAR FONTE!!!!!!!!
 export default function Cabecalho(){
     return(
         <div className="logo-container">
