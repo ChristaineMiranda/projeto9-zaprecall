@@ -1,3 +1,6 @@
+body{
+  font-family: 'Recursive';
+}
 .screen-container{
     background-color: #FB6B6B;
     width: 100vw;
@@ -13,8 +16,7 @@
   .logo-container {
     display: flex;
     align-items: center;
-    margin: 40px 0 20px 0;
-   
+    margin: 40px 0 20px 0;   
   }
   
   .logo-container img {
@@ -48,18 +50,14 @@
     padding: 10px;
   }
   
-  .footer-concluidos > .container-botoes {
+  /* .footer-concluidos > .container-botoes {
     display: flex;
     width: 80%;
     justify-content: space-between;
     margin: 20px;
-  }
+  } */
   
-  /* Você vai precisar trocar a cor dos botões e alguns textos!
-    VERDE = "#2FBE34"
-    AMARELO = "#FF922E"
-    VERMELHO = "#FF3030"
-    CINZA = "#333333" 
+  /* CINZA = "#333333" 
   */
   .container-botoes {
     display: flex;
@@ -93,6 +91,10 @@
   button:nth-child(3){
     background-color: #2FBE34;
     border-color: #2FBE34;
+  }
+  .respondida{
+    text-decoration-line: line-through;
+    color: #2FBE34;
   }
   .pergunta-fechada {
     width: 300px;
