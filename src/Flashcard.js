@@ -59,8 +59,8 @@ const StyledPergunta = styled.div`
     font-weight: ${props => props.virado ? 400 : 700} px;
     font-size: ${props => props.virado ? 16 : 18}px;
     line-height: ${props => props.virado ? 22 : 19}px;
-    align-items: ${props => props.virado ? "" : "center"};//verificar se precisa de ternario (é center para pergunta fechada)
-    position: relative;//relative para pergunta aberta
+    align-items: ${props => props.virado ? "" : "center"};
+    position: relative;
     flex-direction: ${props => props.virado ? "column" : ""};
     margin: 12px;
     padding: 15px;
