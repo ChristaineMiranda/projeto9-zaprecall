@@ -44,5 +44,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+body{
+  font-family: 'Recursive';
+}
 `
 export default GlobalStyle

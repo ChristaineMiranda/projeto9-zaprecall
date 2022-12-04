@@ -3,13 +3,14 @@ import Cabecalho from "./Cabecalho"
 import CaixaDeCards from "./CaixaDeCards"
 import ContadorDeProgresso from "./ContadorDeProgresso"
 import deck from "./Deck"
+import styled from "styled-components"
 
 export default function Container() {
     const [cardsAbertos, setCardsAbertos] = useState(0)
     const [saldo, setSaldo] =  useState([])
-    console.log(cardsAbertos)
+   
     return (
-        <div className="screen-container">
+        <StyledContainerTela>
             <Cabecalho />
             <CaixaDeCards deck = {deck}
              cardsAbertos = {cardsAbertos}
@@ -17,6 +18,18 @@ export default function Container() {
               saldo = {saldo}
               setSaldo = {setSaldo}/>
             <ContadorDeProgresso cardsAbertos = {cardsAbertos} saldo = {saldo}/>
-        </div>
+        </StyledContainerTela>
     )
 }
+
+const StyledContainerTela = styled.div`
+    background-color: #FB6B6B;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 200px;
+`
