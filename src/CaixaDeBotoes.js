@@ -42,9 +42,9 @@ export default function CaixaDeBotoes(props) {
     }
     return (
         <StyledContainerBotoes>
-            <StyledBotao className="botao" data-test="no-btn" onClick={() => clicado("erro")}>Não lembrei</StyledBotao>
-            <StyledBotao className="botao" data-test="partial-btn" onClick={() => clicado("quase")}>Quase não lembrei</StyledBotao>
-            <StyledBotao className="botao" data-test="zap-btn" onClick={() => clicado("zap")}>Zap!</StyledBotao>
+            <StyledBotao  data-test="no-btn" onClick={() => clicado("erro")}>Não lembrei</StyledBotao>
+            <StyledBotao  data-test="partial-btn" onClick={() => clicado("quase")}>Quase não lembrei</StyledBotao>
+            <StyledBotao  data-test="zap-btn" onClick={() => clicado("zap")}>Zap!</StyledBotao>
         </StyledContainerBotoes>
     )
 }

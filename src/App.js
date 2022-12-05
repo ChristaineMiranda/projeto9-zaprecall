@@ -1,15 +1,17 @@
 import Container from "./Container";
+import TelaInicial from "./TelaInicial"
 import GlobalStyle from "./assets/css/GlobalStyle";
+import { useState } from "react";
 
 
 function App() {
+  const [iniciarJogo, setIniciarJogo] = useState(false)
   return (
    <>
    <GlobalStyle/>
-   <Container />
+   {iniciarJogo? <Container />: <TelaInicial setIniciarJogo = {setIniciarJogo}/> }   
    </>
   )
 }
 
 export default App;
-//Criar primeiro conjunto de cards de apenas uma face a ser exibido estaticamente na tela
